@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: tsm
+  profiles:
+    active: dev

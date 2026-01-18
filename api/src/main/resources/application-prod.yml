@@ -1,0 +1,8 @@
+server:
+  port: 8080
+
+spring:
+  datasource:
+    url: jdbc:postgresql://production-db:5432/tms_bd
+    username: ${DB_USERNAME}
+    password: ${DB_PASSWORD}
