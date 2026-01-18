@@ -1,0 +1,7 @@
+databaseChangeLog:
+  - changeSet:
+      id: 001-initial-schema
+      author: fmikh
+      changes:
+        - sqlFile:
+            path: db/changelog/changes/v1.0/001-initial-schema.sql
