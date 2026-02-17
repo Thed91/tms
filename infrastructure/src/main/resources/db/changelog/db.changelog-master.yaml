@@ -14,3 +14,10 @@ databaseChangeLog:
         - sqlFile:
             path: db/changelog/changes/v1.0/002-fix-column-names.sql
             splitStatements: false
+
+  - changeSet:
+      id: 003-convert-enums-to-varchar
+      author: fmikh
+      changes:
+        - sqlFile:
+            path: db/changelog/changes/v1.0/003-convert-enums-to-varchar.sql
