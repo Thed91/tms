@@ -2,6 +2,15 @@ databaseChangeLog:
   - changeSet:
       id: 001-initial-schema
       author: fmikh
+      validCheckSum: ANY
       changes:
         - sqlFile:
             path: db/changelog/changes/v1.0/001-initial-schema.sql
+
+  - changeSet:
+      id: 002-fix-column-names
+      author: fmikh
+      changes:
+        - sqlFile:
+            path: db/changelog/changes/v1.0/002-fix-column-names.sql
+            splitStatements: false

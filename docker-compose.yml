@@ -6,8 +6,8 @@ services:
       - "5432:5432"
     environment:
       POSTGRES_USER: postgres
-      POSTGRES_PASSWORD: password
-      POSTGRES_DB: tms_bd
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: tms_db
     volumes:
       - postgres_data:/var/lib/postgresql
 

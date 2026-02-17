@@ -1,5 +1,6 @@
 package com.pp.domain.entity;
 
+import com.pp.domain.enums.ProjectStatus;
 import jakarta.persistence.*;
 import lombok.*;
 import org.hibernate.annotations.CreationTimestamp;
@@ -28,8 +29,9 @@ public class Project {
     @JoinColumn(name = "owner_id", nullable = false)
     private User owner;
 
+    @Enumerated(EnumType.STRING)
     @Column(nullable = false)
-    private String status;
+    private ProjectStatus projectStatus;
 
     @CreationTimestamp
     @Column(name = "created_at", nullable = false, updatable = false)

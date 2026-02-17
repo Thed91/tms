@@ -1,5 +1,5 @@
 package com.pp.domain.enums;
 
-public enum Status {
+public enum ProjectStatus {
     TODO, IN_PROGRESS, REVIEW, DONE
 }

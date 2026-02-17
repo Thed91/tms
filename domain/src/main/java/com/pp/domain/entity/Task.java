@@ -1,7 +1,7 @@
 package com.pp.domain.entity;
 
 import com.pp.domain.enums.Priority;
-import com.pp.domain.enums.Status;
+import com.pp.domain.enums.TaskStatus;
 import jakarta.persistence.*;
 import lombok.*;
 import org.hibernate.annotations.CreationTimestamp;
@@ -36,7 +36,7 @@ public class Task {
 
     @Enumerated(EnumType.STRING)
     @Column(nullable = false)
-    private Status status;
+    private TaskStatus taskStatus;
 
     @Enumerated(EnumType.STRING)
     @Column(nullable = false)
